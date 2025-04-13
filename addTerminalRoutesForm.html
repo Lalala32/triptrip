@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terminal Routes Add Form</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .modal-box {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      background-color: white;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn-close {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body class="bg-dark text-dark">
+
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 class="modal-title">Terminal Routes Add Form</h3>    
+    </div>
+
+    <form>
+      <div class="mb-3">
+        <label for="fromTerminal" class="form-label fw-bold">From Terminal</label>
+        <select class="form-select" id="fromTerminal" required>
+          <option selected disabled>Select From Terminal</option>
+          <option value="Terminal A">A</option>
+          <option value="Terminal B">B</option>
+          <option value="Terminal C">C</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="toTerminal" class="form-label fw-bold">To Terminal</label>
+        <select class="form-select" id="toTerminal" required>
+          <option selected disabled>Select To Terminal</option>
+          <option value="Terminal X">Terminal X</option>
+          <option value="Terminal Y">Terminal Y</option>
+          <option value="Terminal Z">Terminal Z</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="transportationType" class="form-label fw-bold">Transportation Type</label>
+        <select class="form-select" id="transportationType" required>
+          <option selected disabled>Select Transportation Type</option>
+          <option value="Bus">Bus</option>
+          <option value="Van">Van</option>
+          <option value="Jeepney">Jeepney</option>
+        </select>
+      </div>
+
+      <div class="text-end mt-4">
+        <button type="button" class="btn btn-outline-secondary me-2">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
